@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <header>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Template para p�ginas</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="./js/jquery-2.0.3.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/geral.css">
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap-datepicker.css">
+        <script type="text/javascript" src="./js/angular.min.js"></script>
+        <script type="text/javascript" src="./js/urlen.js"></script>
+        <script type="text/javascript" src="./js/formatos.js"></script>
+        <script type="text/javascript" src="./js/entradas.js"></script>
+        <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./js/bootstrap-datepicker.pt-BR.min.js"></script>
+        
+    </header>
+
+    <body>
+        <div id="divEscopo" ng-app="sysApk" ng-controller="sysCtrl">
+            
+        <div class="container">
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md4 col-lg-4" style="padding-bottom: 10px;">
+                    <span style="float: right;"><b>Nome</b></span>
+                </div>
+
+                <div class="col-xs-8 col-sm-8 col-md8 col-lg-8">
+                    <input type="text" size="30" maxlength="60" ng-model="tNome">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md4 col-lg-4" style="padding-bottom: 10px;">
+                    <span style="float: right;"><b>Nascimento</b></span>
+                </div>
+
+                <div class="col-xs-8 col-sm-8 col-md8 col-lg-8">
+                    <input data-provide="datepicker" ng-model="tNasc">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md4 col-lg-4" style="padding-bottom: 10px;">
+                    <span style="float: right;"><b>Celular</b></span>
+                </div>
+
+                <div class="col-xs-8 col-sm-8 col-md8 col-lg-8">
+                    <input type="text" onkeydown="javascript: doMask( this, 'celular', true);" ng-model="tCelular"> 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md4 col-lg-4" style="padding-bottom: 10px;">
+                    <span style="float: right;"><b>CPF</b></span>
+                </div>
+
+                <div class="col-xs-8 col-sm-8 col-md8 col-lg-8">
+                    <input type="text" onkeydown="javascript: doCpfMask( this, 'cpf', false);" ng-model="tCpf">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md4 col-lg-4" style="padding-bottom: 10px;">
+                    <span style="float: right;"><b>Email</b></span>
+                </div>
+
+                <div class="col-xs-8 col-sm-8 col-md8 col-lg-8">
+                    <input type="text" size="30" maxlength="60" ng-model="tEmail">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md4 col-lg-4" style="padding-bottom: 10px;">
+                    <span style="float: right;"><b>Entrar</b></span>
+                </div>
+
+                <div class="col-xs-8 col-sm-8 col-md8 col-lg-8">
+                    <button ng-click="getCampos()">Entrar</button>
+                </div>
+            </div>
+
+
+        </div>
+
+        </div>
+    </body>
+</html>

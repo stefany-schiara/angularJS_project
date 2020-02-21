@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <header>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Template para p�ginas</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="./js/jquery-2.0.3.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/geral.css">
+        <script type="text/javascript" src="./js/angular.min.js"></script>
+        <script type="text/javascript" src="./js/urlen.js"></script>
+        <script type="text/javascript" src="./js/nomes.js"></script>
+        <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    </header>
+
+    <body>
+        <div id="divEscopo" ng-app="sysApk" ng-controller="sysCtrl">
+            <br>
+            <br>
+            {{nome}} {{apelido}}
+            <br>
+            <button ng-click="getApelido()">Pesquisa</button>
+        </div>
+    </body>
+</html>

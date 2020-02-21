@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <header>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Template para pрginas</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="./js/jquery-2.0.3.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/geral.css">
+        <script type="text/javascript" src="./js/angular.min.js"></script>
+        <script type="text/javascript" src="./js/urlen.js"></script>
+        <script type="text/javascript" src="./js/template.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+    </header>
+ 
+    <body>
+        <br>
+        <center>
+            <span class="box-azul cantinhos" style="width: 800px; padding: 10px;">
+                <b>Listagem de Clientes</b>
+            </span>
+        </center>
+ 
+        <br>
+        <br>
+ 
+        <div id="divEscopo" ng-app="sysApk" ng-controller="sysCtrl">
+            
+            <div class="row">
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-1"><B>Data</b></div>
+                <div class="hidden-xs hidden-sm col-md-3 col-lg-3"><B>Cliente</b></div>
+                <div class="hidden-xs hidden-sm col-md-3 col-lg-3"><B>Empresa</b></div>
+                <div class="hidden-xs hidden-sm col-md-2 col-lg-2"><B>Status</b></div>
+                <div class="hidden-xs hidden-sm col-md-3 col-lg-3"><b>Detalhe</b></b></div>
+            </div>
+ 
+            <div class="row container-fluid" style="font-size: 13px; margin-left: 1px; margin-right: 1px; background-color: rgb(231, 231, 231);">
+                <div class="hidden-md hidden-lg col-xs-4 col-sm-4">Data</div>
+                <div class="col-xs-8 col-sm-8 col-md-1 col-lg-1"><span class="pull-left">22/02/2002</span></div>
+                
+                <div class="hidden-md hidden-lg col-xs-4 col-sm-4">Cliente</div>
+                <div class="col-xs-8 col-sm-8 col-md-3 col-lg-3">&nbsp;<span class="pull-left">&nbsp;Asdrubal Nascimento</span></div>
+                
+                <div class="hidden-md hidden-lg col-xs-4 col-sm-4">Empresa</div>
+                <div class="col-xs-8 col-sm-8 col-md-3 col-lg-3">&nbsp;<span class="pull-left">&nbsp;Organizaушes Tabajara</span></div>
+                
+                <div class="hidden-md hidden-lg col-xs-4 col-sm-4">Status</div>
+                <div class="col-xs-8 col-sm-8 col-md-2 col-lg-2">&nbsp;<span class="pull-left">&nbsp;Ativo</span></div>
+                
+                <div class="hidden-md hidden-lg col-xs-4 col-sm-4">Detalhe</div>
+                <div class="col-xs-8 col-sm-8 col-md-3 col-lg-3"><span class="pull-left">&nbsp;Intervenусo requerida</span></div>
+                <div class="hidden-md hidden-lg col-xs-12 col-sm-12"><hr></div>
+            </div>
+        </div>
+    </body>
+</html>	
